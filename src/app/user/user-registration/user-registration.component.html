@@ -1,10 +1,10 @@
 
-<div style="margin-left:20px;" >
-    <h3>Registration</h3>
+<div  class="example-form">
+    <h3 class="header">Registration</h3>
     <div>
-        <form [formGroup]="userRegisterForm" (ngSubmit)="onSubmit()" class="example-form">
+        <form [formGroup]="userRegisterForm" (ngSubmit)="onSubmit()" >
           <p>
-              <mat-form-field appearance="outline" class="example-full-width">
+              <mat-form-field appearance="outline" class="example-half-width">
                 <mat-label>Name</mat-label>
                 <input matInput  formControlName="name" >
 
@@ -12,14 +12,14 @@
             </p>
 
             <p>
-                <mat-form-field appearance="outline" class="example-full-width">
+                <mat-form-field appearance="outline" class="example-half-width">
                   <mat-label>E-mail</mat-label>
                   <input matInput type="email"  formControlName="email" >
-  
+
                 </mat-form-field>
               </p>
               <p>
-                <mat-form-field appearance="outline" class="example-full-width">
+                <mat-form-field appearance="outline" class="example-half-width">
                   <mat-label>Password</mat-label>
                   <input matInput type="password" formControlName="password" >
                 </mat-form-field>
@@ -28,14 +28,14 @@
                 <mat-form-field appearance="outline" class="example-full-width">
                   <mat-label>Bio</mat-label>
                       <textarea matInput formControlName="bio"></textarea>
-                      
+
                 </mat-form-field>
-              </p>      
-                      
+              </p>
+
           <button type="submit" [disabled]="!userRegisterForm.valid" >Submit</button>
         </form>
         </div>
 
-        
-   
-     
+
+
+
